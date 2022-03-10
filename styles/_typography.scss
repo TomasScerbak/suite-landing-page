@@ -1,3 +1,24 @@
+/* Typography */
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
 
 $ff-epiloque: "Epilogue", sans-serif;
+
+html {
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1 {
+  color: $dark-blue-color;
+}
+/* Links */
+a {
+  text-decoration: none;
+}
+/* Lists */
+li {
+  list-style: none;
+}

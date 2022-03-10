@@ -1,3 +1,13 @@
 @import "variables";
 @import "typography";
 @import "buttons";
+
+/* Body */
+body {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-family: $ff-epiloque;
+  margin: 0;
+  padding: 0;
+  background-color: $cream-white-color;
+}
