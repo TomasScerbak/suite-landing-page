@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+/* Buttons */
+.btn {
+  border-radius: 4px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  color: #172339;
+  border: 1px solid #172339;
+  background-color: #faf8f6;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: -0.14px;
+}
+
+.btn--primary:hover {
+  background-color: #172339;
+  color: #faf8f6;
+}
+
+.btn--secondary {
+  color: #faf8f6;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  background-color: #172339;
+  padding: 1.5rem 3.1rem;
+}
+
+.btn--secondary:hover {
+  background: #a060ff;
+  background: linear-gradient(166deg, #a060ff 0%, #cb30e3 38%, #ffa84e 91%);
+}
+/*# sourceMappingURL=styles.css.map */

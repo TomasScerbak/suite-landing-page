@@ -15,19 +15,9 @@ body {
 *::after {
   box-sizing: border-box;
 }
-:root {
-  --cream-white-color: #faf8f6;
-  --cream-color: #f3ede7;
-  --dark-blue-color: #172339;
-  --grey-font-color: #49566d;
-  --gradient-color: linear-gradient(
-    166deg,
-    rgba(160, 96, 255, 1) 0%,
-    rgba(203, 48, 227, 1) 38%,
-    rgba(255, 168, 78, 1) 91%
-  );
 
-  --ff-epiloque: "Epilogue", sans-serif;
+
+
 }
 h1 {
   color: var(--dark-blue-color);
@@ -40,42 +30,4 @@ a {
 /* Lists */
 li {
   list-style: none;
-}
-/* Buttons */
-.btn {
-  border-radius: 4px;
-  font-weight: bold;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-.btn-primary {
-  color: var(--dark-blue-color);
-  border: 1px solid var(--dark-blue-color);
-  background-color: var(--cream-white-color);
-  padding: 1.2rem 1.6rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  letter-spacing: -0.14px;
-}
-.btn-secondary {
-  color: var(--cream-white-color);
-  font-size: 1.8rem;
-  font-weight: bold;
-  letter-spacing: -0.18px;
-  background-color: var(--dark-blue-color);
-  padding: 1.5rem 3.1rem;
-}
-.btn-primary:hover {
-  background-color: var(--dark-blue-color);
-  color: var(--cream-white-color);
-}
-.btn-secondary:hover {
-  background: rgb(160, 96, 255);
-  background: linear-gradient(
-    166deg,
-    rgba(160, 96, 255, 1) 0%,
-    rgba(203, 48, 227, 1) 38%,
-    rgba(255, 168, 78, 1) 91%
-  );
 }

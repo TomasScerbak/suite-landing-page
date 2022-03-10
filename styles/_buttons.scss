@@ -1,0 +1,35 @@
+/* Buttons */
+.btn {
+  border-radius: 4px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn--primary {
+  color: $dark-blue-color;
+  border: 1px solid $dark-blue-color;
+  background-color: $cream-white-color;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: -0.14px;
+
+  &:hover {
+    background-color: $dark-blue-color;
+    color: $cream-white-color;
+  }
+}
+.btn--secondary {
+  color: $cream-white-color;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  background-color: $dark-blue-color;
+  padding: 1.5rem 3.1rem;
+
+  &:hover {
+    background: rgb(160, 96, 255);
+    background: $gradient-color;
+  }
+}
