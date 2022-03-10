@@ -1,0 +1,43 @@
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-family: var(--ff-epiloque);
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-background-color);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --cream-white-color: #faf8f6;
+  --cream-color: #f3ede7;
+  --dark-blue-color: #172339;
+  --grey-font-color: #49566d;
+  --gradient-color: linear-gradient(
+    166deg,
+    rgba(160, 96, 255, 1) 0%,
+    rgba(203, 48, 227, 1) 38%,
+    rgba(255, 168, 78, 1) 91%
+  );
+
+  --ff-epiloque: "Epilogue", sans-serif;
+}
+h1 {
+  color: var(--dark-blue-color);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+/* Lists */
+li {
+  list-style: none;
+}
