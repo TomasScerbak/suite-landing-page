@@ -7,6 +7,7 @@ html {
   font-size: 62.5%;
 }
 h1 {
+  font-size: 3.6rem;
   color: $dark-blue-color;
 }
 /* Links */
@@ -16,4 +17,12 @@ a {
 /* Lists */
 li {
   list-style: none;
+}
+/* Images */
+img {
+  width: 100%;
+}
+/* Spans */
+span {
+  font-weight: weight(regular);
 }

@@ -8,12 +8,16 @@
   padding: 0;
 }
 
+/* Color Pallete Variables */
+/* Font Weight Variables */
+/* Media Queries Variables */
 /* Typography */
 html {
   font-size: 62.5%;
 }
 
 h1 {
+  font-size: 3.6rem;
   color: #172339;
 }
 
@@ -25,6 +29,16 @@ a {
 /* Lists */
 li {
   list-style: none;
+}
+
+/* Images */
+img {
+  width: 100%;
+}
+
+/* Spans */
+span {
+  font-weight: 400;
 }
 
 /* Buttons */
@@ -79,25 +93,78 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 2.4rem 1.6rem 5.6rem;
 }
 
-@media screen and (min-width: 700px) {
+.heading .logo {
+  width: 8.1rem;
+  height: 3.2rem;
+}
+
+@media screen and (min-width: 767.98px) {
   .heading {
     margin: 4rem 4rem 8rem;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1199.98px) {
   .heading {
     margin: 5rem 16.5rem 6.7rem;
   }
 }
 
-.logo {
-  width: 8.1rem;
-  height: 3.2rem;
+/* Hero */
+.hero {
+  text-align: left;
+  margin: 0 1.6rem 5.5rem;
+}
+
+.hero .line-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hero .hero__line {
+  width: 20.1rem;
+  padding-right: 5rem;
+}
+
+.hero .hero__heading {
+  margin-bottom: 3.5rem;
+}
+
+.hero .hero__text {
+  color: #49566d;
+  margin-bottom: 3.5rem;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 370px) {
+  .hero .hero__line {
+    width: 16.1rem;
+    padding-right: 3rem;
+  }
+  .hero .hero__heading {
+    font-size: 3rem;
+  }
+  .hero .hero__text {
+    color: #49566d;
+    margin-bottom: 3.5rem;
+    font-size: 1.3rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
