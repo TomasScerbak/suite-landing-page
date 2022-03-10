@@ -1,3 +1,5 @@
+@import "resets";
+@import "functions";
 @import "variables";
 @import "typography";
 @import "buttons";
@@ -7,21 +9,17 @@ body {
   line-height: 1.5;
   font-size: 1.8rem;
   font-family: $ff-epiloque;
-  margin: 0;
-  padding: 0;
   background-color: $cream-white-color;
 }
 /* Header */
 .heading {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
+  @include flexCenter();
   margin: 2.4rem 1.6rem 5.6rem;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: $small) {
     margin: 4rem 4rem 8rem;
   }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $large) {
     margin: 5rem 16.5rem 6.7rem;
   }
 }
