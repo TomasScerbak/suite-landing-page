@@ -18,6 +18,12 @@
     background-color: $dark-blue-color;
     color: $cream-white-color;
   }
+
+  @media screen and (max-width: $xs-small) {
+    & {
+      font-size: 1.2rem;
+    }
+  }
 }
 .btn--secondary {
   color: $cream-white-color;
@@ -29,5 +35,11 @@
   &:hover {
     background: rgb(160, 96, 255);
     background: $gradient-color;
+  }
+
+  @media screen and (max-width: $xs-small) {
+    & {
+      font-size: 1.5rem;
+    }
   }
 }
