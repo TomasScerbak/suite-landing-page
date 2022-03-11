@@ -104,8 +104,7 @@ span {
 
 @media screen and (max-width: 575.98px) {
   .btn--secondary {
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -192,6 +191,15 @@ body {
   }
 }
 
+@media screen and (min-width: 1199.98px) {
+  .line-wrapper .hero__line {
+    width: 33rem;
+    top: 17%;
+    left: 33%;
+    z-index: 1;
+  }
+}
+
 /* Hero */
 .hero {
   text-align: left;
@@ -242,6 +250,25 @@ body {
   }
 }
 
+@media screen and (min-width: 1199.98px) {
+  .hero {
+    margin: 0 16.6rem 5.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hero .hero__heading {
+    margin-bottom: 6.5rem;
+    width: 75%;
+  }
+  .hero .hero__text {
+    font-size: 2.5rem;
+    width: 52%;
+    margin-bottom: 6.5rem;
+  }
+}
+
 /* Phone Image Container */
 .phone-container {
   margin: 5.5rem 0;
@@ -265,6 +292,14 @@ body {
     width: 28.1rem;
     height: 48.2rem;
     z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .phone-container .phone__image {
+    width: 35rem;
+    height: 60rem;
+    left: 50%;
   }
 }
 
@@ -305,9 +340,44 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 8.8rem;
+    text-align: left;
   }
   .stat {
     margin-bottom: 0;
+  }
+  .statistics__heading {
+    font-size: 4.8rem;
+  }
+  .statistics__text {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .stat {
+    margin-bottom: 0;
+  }
+  .statistics__heading {
+    font-size: 4.8rem;
+  }
+  .statistics__text {
+    font-size: 1.5rem;
   }
 }
 
