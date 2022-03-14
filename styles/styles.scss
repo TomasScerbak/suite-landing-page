@@ -53,8 +53,8 @@ body {
     .hero__line {
       width: 30rem;
       position: absolute;
-      top: 22%;
-      left: 34%;
+      top: 20%;
+      left: 35%;
       z-index: 1;
     }
   }
@@ -100,7 +100,7 @@ body {
       display: flex;
       flex-direction: column;
       margin: 0 4rem 7.5rem;
-      top: 25%;
+      top: 22%;
     }
     #{&}__heading {
       margin-bottom: 6.5rem;
@@ -221,7 +221,6 @@ body {
   background-color: $cream-color;
 
   .footer__card {
-    position: relative;
     background-color: $dark-blue-color;
     text-align: center;
     border-radius: 15px;
@@ -231,7 +230,7 @@ body {
     position: absolute;
     width: 21rem;
     height: 35rem;
-    top: -30%;
+    top: -20%;
     left: 22%;
   }
 
@@ -272,6 +271,10 @@ body {
     .testimony__text {
       padding: 4rem 5.8rem;
     }
+    .jeremy {
+      top: -25%;
+      left: 37%;
+    }
   }
 
   @media screen and (max-width: 320px) {
@@ -284,17 +287,21 @@ body {
   .footer-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: absolute;
-    bottom: -105%;
+    bottom: -95%;
     width: 100vw;
+    height: 64rem;
   }
   .footer__card {
+    position: absolute;
     width: 68.9rem;
     height: 68.4rem;
+    top: -40%;
   }
 }
+/* Media Section */
 .media-section {
   @include flexCenter(column);
 
@@ -312,22 +319,42 @@ body {
     margin-top: 3.3rem;
     color: $grey-font-color;
   }
+  .media-links {
+    @include flexCenter(row);
+
+    .icon {
+      width: 2rem;
+      height: 2rem;
+      margin: 3.3rem 1rem 8rem;
+    }
+  }
 }
 @media screen and (min-width: $x-small) {
   .media-section {
-    @include flexCenter(row);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    .logo-wrapper {
+      margin-right: 2rem;
+    }
+    .footer-logo {
+      margin: 0;
+    }
+    .copyright {
+      margin: 0 0 0 4rem;
+    }
+    .media-links {
+      margin-top: 4rem;
+    }
+    .icon {
+      margin: 0;
+    }
   }
 }
 
-.media-links {
-  @include flexCenter(row);
-
-  .icon {
-    width: 2rem;
-    height: 2rem;
-    margin: 3.3rem 2rem 8rem;
-  }
-}
 /* Author */
 .attribution {
   font-size: 1.2rem;
