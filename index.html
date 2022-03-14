@@ -23,11 +23,7 @@
     </header>
     <main>
       <div class="line-wrapper">
-        <img
-          class="hero__line"
-          src="/images/pattern-curved-line-1.svg"
-          alt=""
-        />
+        <img class="hero__line" src="images/pattern-curved-line-1.svg" alt="" />
       </div>
       <div class="hero">
         <div class="hero-container">
@@ -45,7 +41,9 @@
                 type="image/webp"
                 media="(min-width: 600px)"
                 srcset="
+                  images/image-hero-portrait.png     1x,
                   images/image-hero-portrait.webp    1x,
+                  images/image-hero-portrait@2x.png  2x,
                   images/image-hero-portrait@2x.webp 2x
                 "
               />
@@ -53,13 +51,15 @@
                 type="image/webp"
                 media="(min-width: 300px)"
                 srcset="
+                  images/image-hero-landscape.png     1x,
                   images/image-hero-landscape.webp    1x,
+                  images/image-hero-landscape@2x.png  2x,
                   images/image-hero-landscape@2x.webp 2x
                 "
               />
               <img
                 class="phone__image"
-                src="images/image-hero-landscape.png"
+                src="images/image-hero-landscape.webp"
                 alt="picture of apple phone"
               />
             </picture>
@@ -81,12 +81,56 @@
         </div>
       </div>
     </main>
-
     <footer>
-      It just works. “I really like how it is an all-in-one solution that handle
-      many of the tasks that you would normally need separate tools to do the
-      same job. This thing is a miracle worker.” Jeremy Robinson CMO, Fylo
-      Copyright - Suite
+      <div class="footer-container">
+        <div class="footer__card">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1000px)"
+              srcset="
+                images/image-jeremy-large.png     1x,
+                images/image-jeremy-large.webp    1x,
+                images/image-jeremy-large@2x.png  2x,
+                images/image-jeremy-large@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 300px)"
+              srcset="
+                images/image-jeremy-small.png     1x,
+                images/image-jeremy-small.webp    1x,
+                images/image-jeremy-small@2x.png  2x,
+                images/image-jeremy-small@2x.webp 2x
+              "
+            />
+            <img
+              class="jeremy"
+              src="images/image-jeremy-small.webp"
+              alt="picture of a person looking at mobile"
+            />
+          </picture>
+          <div class="footer-line">
+            <img
+              class="footer__line"
+              src="images/pattern-curved-line-2.svg"
+              alt=""
+            />
+          </div>
+          <blockquote>
+            <h1 class="testimony__heading"><span>It just</span> works.</h1>
+            <p class="testimony__text">
+              “I really like how it is an all-in-one solution that handle many
+              of the tasks that you would normally need separate tools to do the
+              same job. This thing is a miracle worker.”
+            </p>
+            <h2 class="quote__author">Jeremy Robinson</h2>
+            <p class="company">CMO, Fylo</p>
+          </blockquote>
+        </div>
+        Copyright - Suite
+      </div>
     </footer>
   </body>
 </html>
