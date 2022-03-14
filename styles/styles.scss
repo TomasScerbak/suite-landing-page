@@ -232,7 +232,7 @@ body {
     width: 21rem;
     height: 35rem;
     top: -30%;
-    left: 14%;
+    left: 22%;
   }
 
   .footer-line {
@@ -274,7 +274,7 @@ body {
     }
   }
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 320px) {
     .jeremy {
       left: 23%;
     }
@@ -287,7 +287,7 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: -95%;
+    bottom: -105%;
     width: 100vw;
   }
   .footer__card {
@@ -295,22 +295,32 @@ body {
     height: 68.4rem;
   }
 }
-.logo-wrapper {
-  text-align: center;
+.media-section {
+  @include flexCenter(column);
 
+  .logo-wrapper {
+    text-align: center;
+  }
   .footer-logo {
     width: 8.1rem;
     height: 3.2rem;
     margin-top: 5.6rem;
   }
+
+  .copyright {
+    text-align: center;
+    margin-top: 3.3rem;
+    color: $grey-font-color;
+  }
 }
-.copyright {
-  text-align: center;
-  margin-top: 3.3rem;
-  color: $grey-font-color;
+@media screen and (min-width: $x-small) {
+  .media-section {
+    @include flexCenter(row);
+  }
 }
+
 .media-links {
-  @include flexCenter(center);
+  @include flexCenter(row);
 
   .icon {
     width: 2rem;
