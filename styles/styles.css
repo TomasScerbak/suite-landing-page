@@ -373,6 +373,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
+    padding-right: 2rem;
     text-align: left;
   }
   .stat {
@@ -488,6 +489,45 @@ body {
     width: 68.9rem;
     height: 68.4rem;
     top: -40%;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .footer__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 110rem;
+    top: -50%;
+  }
+  .footer__card blockquote {
+    text-align: left;
+    width: 50%;
+  }
+  .footer__card blockquote .testimony__text {
+    padding: 4rem 0;
+    width: 70%;
+  }
+  .footer__card .jeremy {
+    width: 37.5rem;
+    height: 60rem;
+    left: 5%;
+    top: 12%;
+    z-index: 1;
+  }
+  .footer__card .footer-line {
+    padding: 0;
+    margin: 0 5rem 10rem;
   }
 }
 
