@@ -482,7 +482,7 @@ body {
     position: absolute;
     bottom: -95%;
     width: 100vw;
-    height: 64rem;
+    height: 63.9rem;
   }
   .footer__card {
     position: absolute;
@@ -493,6 +493,9 @@ body {
 }
 
 @media screen and (min-width: 1199.98px) {
+  .footer-container {
+    height: 53.5rem;
+  }
   .footer__card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -508,6 +511,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 110rem;
+    height: 53.5rem;
     top: -50%;
   }
   .footer__card blockquote {
@@ -522,7 +526,7 @@ body {
     width: 37.5rem;
     height: 60rem;
     left: 5%;
-    top: 12%;
+    top: -12%;
     z-index: 1;
   }
   .footer__card .footer-line {
